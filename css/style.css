@@ -30,7 +30,7 @@ font-family: 'Roboto', sans-serif;
 color: #434455;
 background-color: #FFFFFF;
 }
-
+                                       /* =========NAV========= */
 .header-desing {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
@@ -130,16 +130,20 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     gap: 40px;
 }
 
+                                           /* =========/NAV========= */
+
+                                           /* ===========MAIN ========== */
 
 .main {
 background-color: #2E2F42;
 padding: 188px 0 188px;
-display: flex;
+/* display: flex; */
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
 background-size: cover;
 max-width: 1440px;
 background-repeat: no-repeat;
 background-position: center;
+margin: auto;
 }
 
 .container-button {
@@ -195,6 +199,9 @@ transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 0; 
 }
 
+                                       /* ===========/MAIN ========== */
+
+                                    /* ============BENEFITS=========== */
  .benefits-icon {
     display: flex;
     gap: 24px;
@@ -251,6 +258,10 @@ letter-spacing: 0.02em;
 /* width: 264px; */
 width: calc((100% - 72px) / 4);
 }
+
+                                            /* ============/BENEFITS=========== */
+
+                                            /* ===============TEAM============== */
 
 .team {
 background-color: #F4F4FD;
@@ -337,6 +348,8 @@ margin-bottom: 8px;
 .logo-social {
     fill: #f4f4fd;
 }
+                                       /* ===============/TEAM============== */
+                                       /* ===============PORTFOLIO============== */
 
 .portfolio {
 color: #2e2f42;
@@ -396,18 +409,6 @@ letter-spacing: 0.02em; */
 }
 
 .overlay-item {
-    /* position: absolute;
-    top: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    padding: 40px 32px;
-    background-color: #4d5ae5;
-    height: 100%;
-    width: 100%;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .container-portfolio-list:hover {
@@ -464,6 +465,9 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em; */
 }
+
+                                              /* ===============/PORTFOLIO============== */
+                                              /* =================FOOTER================== */
 
 .footer-desing {
     display: flex;
@@ -557,7 +561,239 @@ margin-right: 0;
 .logo-footer-desing {
     fill: #f4f4fd;
 }
+                                                /* =================/FOOTER================== */ 
+                                                /* =================BACKDROP================= */
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+                                                 /* =================/BACKDROP================= */
+                                                 /* ============MODAL WINDOW STYLES============ */
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+width: 408px;
+min-height: 584px;
+background-color: #FCFCFC;
+border-radius: 4px;
+padding: 72px 24px 24px 24px;
+
+}
+
+.modal-close-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    line-height: 0;
+    stroke: #2E2F42;
+    background-color: #E7E9FC;
+    border: none;
+    border: 1px rgba(0, 0, 0, 0.10) solid;
+    border-radius: 50%;
+    transition: background-color 250ms linear;
+}
+
+.modal-close-btn-icon {
+    
+}
+
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    fill: #FFFFFF;
+    background-color: #404BBF;
+}
+
+
+
+                                                 /* ============/MODAL WINDOW STYLES============ */
+
+                                                 /* ===============DESIGN WINDOW================== */
+
+.rewiew-form-contacts {
+    text-align: center;
+    width: 360px;
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.rewiew-form-field-label {
+    display: block;
+    color: #8E8F99;
+     font-size: 12px;
+     font-weight: 400;
+     line-height: 1.17;
+     letter-spacing: 0.04em;
+     margin-bottom: 4px;
+    }
+    
+
+.rewiew-form-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    background-color: transparent;
+    padding-left: 38px;
+    transition: border-color 250ms linear;
+    outline: 0px solid transparent;
+}
+
+.rewiew-form-input:focus {
+    border-color: #4D5AE5;
+}
+
+
+
+.rewiew-form-input-wraper {
+    position: relative;
+}
+
+.rewiew-form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill 250ms linear;
+}
+
+.rewiew-form-input:focus + .rewiew-form-input-icon {
+    fill: #404BBF;
+}
+
+.rewiew-form-field-wrapper {
+    margin-bottom: 26px;
+}
+
+.rewiew-form-comment {
+    color: rgba(46, 47, 66, 0.40);
+font-size: 12px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 0.04em;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    resize: none;
+    transition: border-color 250ms linear;
+    outline: 0px solid transparent;
+}
+
+.rewiew-form-field-wrapper-comment {
+    margin-bottom: 16px;
+}
+
+.rewiew-form-comment::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+}
+
+.rewiew-form-comment:focus {
+    border-color: #4D5AE5;
+}
+
+.rewiew-form-own-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.rewiew-form-checkbox-label {
+    color: #8E8F99;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 0.04em;
+}
+
+.rewiew-form-privacy {
+    color: #4D5AE5;
+font-size: 12px;
+font-weight: 400;
+text-decoration: underline;
+}
+
+.rewiew-form-chekbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.rewiew-form-chekbox:checked 
++ .rewiew-form-checkbox-label 
+> .rewiew-form-own-checkbox {
+background-color: #404BBF;
+border-color: #404BBF;
+}
+
+.rewiew-form-chekbox:focus 
++ .rewiew-form-checkbox-label 
+> .rewiew-form-own-checkbox {
+outline: 1px solid #404BBF;
+}
+
+.rewiew-form-own-checkbox-icon {
+    fill: #F4F4FD;
+    opacity: 0;
+}
+
+.rewiew-form-chekbox:checked 
++ .rewiew-form-checkbox-label 
+ .rewiew-form-own-checkbox-icon {
+opacity: 1;
+}
+
+.rewiew-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rewiew-form-submit-btn {
+color: white;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 1.5;
+ letter-spacing: 0.04em;
+ background-color: #4D5AE5;
+ width: 169px;
+ height: 56px;
+ border-radius: 4px;
+ transition:  background-color 250ms linear;
+}
+                                                  /* ===============/DESIGN WINDOW================== */
 .nav-link:hover,
 .nav-link:focus
 {
@@ -581,5 +817,3 @@ background-color: #404BBF;
 .nav-link-list:focus {
     color: #404BBF;
 }
-
-/* flex footer */

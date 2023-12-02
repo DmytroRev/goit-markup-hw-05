@@ -401,6 +401,93 @@
         </div>
     </div>
   </footer>
+  <div class="backdrop is-open">
+    <div class="modal">
+        <button class="modal-close-btn">
+            <svg class="modal-close-btn-icon" 
+            width="8" 
+            height="8" 
+            aria-label="close modal icon"
+            >
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="rewiew-form-contacts">Leave your contacts and we will call you back</p>
+        <form class="rewiew-form">
+            <div class="rewiew-form-field-wrapper">
+                <label class="rewiew-form-field-label" for="user-name">Name</label>
+                <div class="rewiew-form-input-wraper">
+                    <input class="rewiew-form-input" 
+                    id="user-name" 
+                    name="user-name" 
+                    type="text"
+                    pattern="[a-zA-Zа-яА-яіІїЇєЄ']+"
+                    title="Viktor"
+                    required>
+                    <svg class="rewiew-form-input-icon" width="18" height="18" aria-label="icon user">
+                        <use href="./images/icons.svg#icon-person" ></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="rewiew-form-field-wrapper">
+                <label class="rewiew-form-field-label" for="user-tel">Phone</label>
+                <div class="rewiew-form-input-wraper">
+                    <input class="rewiew-form-input" 
+                    id="user-tel" 
+                    name="user-tel" 
+                    type="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    title="xxx-xxx-xx-xx"
+                    required>
+                    <svg class="rewiew-form-input-icon" width="18" height="24" aria-label="icon phone">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="rewiew-form-field-wrapper">
+                <label class="rewiew-form-field-label" for="user-email">Email</label>
+                <div class="rewiew-form-input-wraper">
+                    <input class="rewiew-form-input" 
+                    id="user-email" 
+                    name="user-email" 
+                    type="email"
+                    required>
+                    <svg class="rewiew-form-input-icon" width="18" height="24" aria-label="icon email">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="rewiew-form-field-wrapper-comment">
+                <label class="rewiew-form-field-label" for="user-comment">Comment</label>
+                <textarea class="rewiew-form-comment" 
+                id="user-comment" 
+                name="user-comment" 
+                placeholder="Text input"
+                required
+                ></textarea>
+            </div>
+            <div class="rewiew-form-chekbox-wrapper">
+                <input class="rewiew-form-chekbox visually-hidden" 
+                id="user-privacy" 
+                name="user-privacy" 
+                type="checkbox" 
+                value="true"
+                required
+                >
+                <label class="rewiew-form-checkbox-label" for="user-privacy">
+                    <span class="rewiew-form-own-checkbox">
+                        <svg class="rewiew-form-own-checkbox-icon" width="10" height="8" aria-label="icon property">
+                            <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the 
+                    <a class="rewiew-form-privacy" href="">Privacy Policy</a></label>
+            </div>
+            <div class="rewiew-form-btn">
+                <button class="rewiew-form-submit-btn nav-link" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+  </div>
 </body>
 </html>
-
