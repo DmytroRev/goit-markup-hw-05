@@ -604,9 +604,7 @@ background-color: transparent;
 .footer-subscribe-input::placeholder {
     color: #ffffff;
 }
-.footer-button-icon {
-    position: relative;
-}
+
 
 .footer-subscribe-btn {
     display: flex;
