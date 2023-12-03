@@ -582,7 +582,7 @@ margin-bottom: 16px;
 
 
 .footer-subscribe-label {
-    
+    gap: 24px;
 }
 
 .footer-subscribe-input {
@@ -603,6 +603,9 @@ background-color: transparent;
 
 .footer-subscribe-input::placeholder {
     color: #ffffff;
+}
+.footer-button-icon {
+    position: relative;
 }
 
 .footer-subscribe-btn {
@@ -625,8 +628,10 @@ transition: background-color 250ms linear;
 }
 
 .footer-subscribe-icons {
-    margin-left: 16px;
-}
+    display: flex; 
+     justify-content: center;
+    align-items: center;
+} 
                                                 /* =================/FOOTER================== */ 
                                                 /* =================BACKDROP================= */
 
