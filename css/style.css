@@ -577,12 +577,12 @@ margin-bottom: 16px;
 
 .footer-subscribe-form {
     display: flex;
-    /* gap: 24px; */
+    gap: 24px;
 }
 
 
 .footer-subscribe-label {
-    gap: 24px;
+    /* gap: 24px; */
 }
 
 .footer-subscribe-input {
@@ -597,14 +597,13 @@ letter-spacing: 0.04em;
 padding-left: 16px;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 color: #ffffff;
-margin-right: 24px;
+/* margin-right: 24px; */
 background-color: transparent;
 }
 
 .footer-subscribe-input::placeholder {
     color: #ffffff;
 }
-
 
 .footer-subscribe-btn {
     display: flex;
@@ -626,9 +625,7 @@ transition: background-color 250ms linear;
 }
 
 .footer-subscribe-icons {
-    display: flex; 
-     justify-content: center;
-    align-items: center;
+    margin-left: 16px;
 } 
                                                 /* =================/FOOTER================== */ 
                                                 /* =================BACKDROP================= */
